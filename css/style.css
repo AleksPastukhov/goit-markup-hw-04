@@ -7,7 +7,9 @@
   --logo-color: #000000;
   --main-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
-  --background-hero-footer-color: #2f303a;
+  --background-footer-color: #2f303a;
+  --bg-hero-color: #c4c4c4;
+  --bg-overlay: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -162,8 +164,17 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--background-hero-footer-color);
+  background-color: var(--bg-hero-color);
   text-align: center;
+
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(to right, var(--bg-overlay), var(--bg-overlay)),
+    url(../images/bg/hero-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -232,6 +243,9 @@ body {
 
 .section.team {
   background-color: var(--secondary-bg-color);
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .team.list {
@@ -281,6 +295,29 @@ body {
   line-height: 1.19;
 }
 
+/* Our clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Button */
 .button {
   display: inline-block;
@@ -300,7 +337,7 @@ body {
   cursor: pointer;
 }
 
-.button.hero {
+.hero-button {
   padding: 10px 32px;
 
   color: var(--main-bg-color);
@@ -329,8 +366,11 @@ body {
 .all-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 
-  background-color: var(--background-hero-footer-color);
+  background-color: var(--background-footer-color);
 }
 
 .logo.footer {
