@@ -423,7 +423,7 @@ body {
 .all-footer > .container {
   display: flex;
   gap: 70px;
-  /* align-items: center; */
+  align-items: baseline;
 }
 
 .logo.footer {
@@ -463,10 +463,6 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-bg-color);
-}
-
-.footer-social-box {
-  margin-top: 12px;
 }
 
 .footer-social-box .social-list {
