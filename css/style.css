@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -175,7 +175,7 @@ body {
   background-color: var(--bg-hero-color);
   text-align: center;
 
-  width: 1600px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, var(--bg-overlay), var(--bg-overlay)),
@@ -257,7 +257,7 @@ body {
 
 .section.team {
   background-color: var(--secondary-bg-color);
-  width: 1600px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -411,7 +411,7 @@ body {
 .all-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 
